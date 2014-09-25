@@ -1,0 +1,158 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Mathematics and Science Classes
+	</title>
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<style type="text/css">
+	body {
+		background-image: url(http://athletics.wheatoncollege.edu/information/sportsinformation/wheatonlogowr.jpg);
+}
+h1 {
+    background-color: #b0c4de;
+}
+
+p {
+    background-color: #e0ffff;
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    background: #00F;
+    color: white;
+    font-weight: bold;
+    font-size: "24";
+    position: relative;
+    -webkit-animation: mymove 12s;  /* Chrome, Safari, Opera */
+    animation: mymove 12s infinite;
+}
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 0px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 0px;}
+}
+/* Bubble Bottom */
+@mixin bubble-bottom {
+	display: inline-block;
+	position: relative;
+
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		border-style: solid;
+		border-color: #00F;
+		@include prefixed(transition-duration, $defaultDuration);
+		@include prefixed(transition-property, bottom);
+		left: calc(50% - #{$tipWidth});
+		bottom: 0;
+		border-width: $tipHeight $tipWidth 0 $tipWidth;
+		border-color: $tipColour transparent transparent transparent;
+	}
+
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
+		bottom: -($tipHeight);
+	}
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+	<font size="6" color="#b0c4de" face="verdana"><center>Course Schedule</center></font>
+	<H1><strong><em><center>Mathematics.</center></em></strong></H1>
+	<H1><strong><em><center>Computer Science.</center></em></strong></H1>
+<center>
+<a href="#" class="button bubble-bottom"><div id="div2">Spring 2013</div></a>
+<a href="#" class="button bubble-bottom"><div id="div2">Fall 2013</div></a>
+<a href="#" class="button bubble-bottom"><div id="div2">Spring 2014</div></a>
+<a href="#" class="button bubble-bottom"><div id="div2">Fall 2014</div></a>
+<a href="#" class="button bubble-bottom"><div id="div2">Spring 2015</div></a></center>
+<!--<div id="div2">Spring 2013</div>
+<div id="div2">Fall 2013</div>
+<div id="div2">Spring 2014</div>
+<div id="div2">Fall 2014</div>
+<div id="div2">Spring 2015</div>-->
+
+
+<!--	.pulse {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse:hover, .pulse:focus, .pulse:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.pulse-grow {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-grow:hover, .pulse-grow:focus, .pulse-grow:active {
+  -webkit-animation-name: pulse-grow;
+  animation-name: pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}-->
+</body>
+</html>
