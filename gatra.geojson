@@ -1,0 +1,142 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.185875,
+            41.966687
+          ],
+          [
+            -71,
+            18576,
+            41.966052
+          ],
+          [
+            -71.185665,
+            41.965087
+          ],
+          [
+            -71.186303,
+            41.965087
+          ],
+          [
+            -71.186941,
+            41.965143
+          ],
+          [
+            -71.18714,
+            41.966212
+          ],
+          [
+            -71.187821,
+            41.967029
+          ],
+          [
+            -71.188121,
+            41.966782
+          ],
+          [
+            -71.191705,
+            41.97155
+          ],
+          [
+            -71.1976,
+            41.975634
+          ],
+          [
+            -71.201017,
+            41.976942
+          ],
+          [
+            -71.203378,
+            41.979112
+          ],
+          [
+            -71.207626,
+            41.98042
+          ],
+          [
+            -71.209515,
+            41.980866
+          ],
+          [
+            -71.211317,
+            41.998952
+          ],
+          [
+            -71.214235,
+            42.021146
+          ],
+          [
+            -71.21754,
+            -42.026757
+          ],
+          [
+            -71.219771,
+            42.03173
+          ]
+        ]
+      },
+      "properties": {
+        "Route": "140",
+        "Type": "Bus Route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.185875,
+          41.966687
+        ]
+      },
+      "properties": {
+        "Stop 1": "Wheaton College (Slype)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.209008,
+          41.981536
+        ]
+      },
+      "properties": {
+        "Stop 2": "Great Woods Plaza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.225971,
+          42.010429
+        ]
+      },
+      "properties": {
+        "Stop 3": "Mansfield Crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.219341,
+          42.032767
+        ]
+      },
+      "properties": {
+        "Stop 4": "Train Station"
+      }
+    }
+  ]
+}
