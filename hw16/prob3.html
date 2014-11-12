@@ -2,14 +2,15 @@
 <html>
 
 <head>
-  <title>
+  <title>Lazy Caterer's</title>
+  <meta charset="utf-8">
+  <style>
 
-  </title>
-<style>
-tbody tr:nth-child(odd) {
+
+  tbody tr:nth-child(odd) {
    background-color: #bbb;
-}
-</style>
+   }
+   </style>
 </head>
 
 <body>
@@ -17,9 +18,9 @@ tbody tr:nth-child(odd) {
 
 Value for 'n': <input type="num" id="randnum" value="">
 
-<p>Click the button to display the list of values of the first n values of the Lazy Caterer's sequence.</p>
+<p>Click 'Enter' to display the list of values of the first n values of the Lazy Caterer's sequence.</p>
 
-<button onclick="givennum()">Try it</button>
+<button onclick="givennum()">Enter</button>
 
 <p id="foo"></p>
 
@@ -28,14 +29,15 @@ function givennum() {
    
     var i;
     i=parseInt(i);
-     var n = document.getElementById("randnum").value;
+    var n = document.getElementById("randnum").value;
     n=parseInt(n);
-
-    for (i = 0; i < n; i++) {
-
-    	document.getElementById("foo").innerHTML = ((n*n)+n+2)/2;
-
-    };
+    for (var i = 0; i <= n; i++)
+    {
+      var output= ((i*i)+i+2)/2;
+      display=(i,output);
+      }    
+      document.getElementById("randnum").innerHTML = display;
+    }
 }
 
 
